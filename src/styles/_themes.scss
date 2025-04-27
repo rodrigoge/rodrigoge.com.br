@@ -1,6 +1,22 @@
 @use './colors' as *;
 
-:root {
-    --primary-color: #{$black-900};
-    --text-color: #{$white-100};
+// :root {
+//     --primary-color: #{$black-900};
+//     --text-color: #{$white-100};
+// }
+
+$light-theme: (
+    primary-color: #{$black-900},
+    text-color: #{$white-100},
+);
+
+$dark-theme: (
+    primary-color: #{$white-100},
+    text-color: #{$black-900},
+);
+
+@mixin apply-theme($theme) {
+    --primary-color: map-get($theme, primary);
+    --background-color: map-get($theme, background);
+    --text-color: map-get($theme, text);
 }

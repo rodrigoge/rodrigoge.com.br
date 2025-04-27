@@ -1,7 +1,15 @@
-@use './themes.scss';
-@use './colors.scss';
+@use './themes.scss' as *;
+@use './colors.scss' as *;
+
+:root {
+    @include apply-theme($light-theme);
+}
+
+[data-theme='dark'] {
+    @include apply-theme($dark-theme);
+}
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     color: var(--text-color);
 }

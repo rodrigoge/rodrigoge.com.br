@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './Header.module.scss';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 export default function Header() {
     return (
@@ -8,7 +9,7 @@ export default function Header() {
             <nav className={styles.nav}>
                 <ul>
                     <li>
-                        <span>Theme</span>
+                        <ThemeToggle />
                     </li>
                     <li>
                         <span>Language</span>
