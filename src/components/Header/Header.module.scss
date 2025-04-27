@@ -1,0 +1,32 @@
+@use '../../styles/colors.scss';
+@use '../../styles/themes.scss';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 74px;
+    padding: 0 36px;
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+
+        li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+
+            > :hover {
+                opacity: 0.9;
+                transition: 0.3s;
+            }
+        }
+    }
+}
