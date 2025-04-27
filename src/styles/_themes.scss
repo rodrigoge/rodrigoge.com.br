@@ -1,0 +1,6 @@
+@use './colors' as *;
+
+:root {
+    --primary-color: #{$black-900};
+    --text-color: #{$white-100};
+}

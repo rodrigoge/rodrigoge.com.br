@@ -1,0 +1,7 @@
+@use './themes.scss';
+@use './colors.scss';
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
