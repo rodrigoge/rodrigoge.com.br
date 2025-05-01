@@ -1,5 +1,5 @@
-@use './themes.scss' as *;
-@use './colors.scss' as *;
+@use 'themes' as *;
+@use 'colors' as *;
 
 :root {
     @include apply-theme($light-theme);
@@ -10,6 +10,6 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
 }

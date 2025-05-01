@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import styles from './ThemeToggle.module.scss';
+import { AiOutlineMoon } from "react-icons/ai";
+import { FiSun } from 'react-icons/fi';
 
 export default function ThemeToggle() {
     const [theme, setTheme] = useState<'light' | 'dark'>('dark');
@@ -27,9 +29,20 @@ export default function ThemeToggle() {
     };
 
     return (
-        <button>
-            <span className={styles.toggle} onClick={toggleTheme}>
-                {theme === 'dark' ? '🌙' : '☀️'}
+        <button className={styles.toggle_button} onClick={toggleTheme}>
+            <span className={styles.toggle}>
+                {
+                    theme === 'dark' ? 
+                    <FiSun 
+                        size={18}
+                        color='var(--text-color)'
+                    />
+                    : 
+                    <AiOutlineMoon 
+                        size={18}
+                        color='var(--text-color)'
+                    />
+                }
             </span>
         </button>
     )

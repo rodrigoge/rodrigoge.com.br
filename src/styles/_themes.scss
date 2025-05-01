@@ -1,22 +1,20 @@
+@use 'sass:map';
 @use './colors' as *;
 
-// :root {
-//     --primary-color: #{$black-900};
-//     --text-color: #{$white-100};
-// }
-
-$light-theme: (
-    primary-color: #{$black-900},
-    text-color: #{$white-100},
+$dark-theme: (
+    primary-color: $black-900,
+    text-color: $white-100,
+    border-color: $black-600,
 );
 
-$dark-theme: (
-    primary-color: #{$white-100},
-    text-color: #{$black-900},
+$light-theme: (
+    primary-color: $white-200,
+    text-color: $black-600,
+    border-color: $grey-100,
 );
 
 @mixin apply-theme($theme) {
-    --primary-color: map-get($theme, primary);
-    --background-color: map-get($theme, background);
-    --text-color: map-get($theme, text);
+    --primary-color: #{map.get($theme, primary-color)};
+    --text-color: #{map.get($theme, text-color)};
+    --border-color: #{map.get($theme, border-color)};
 }

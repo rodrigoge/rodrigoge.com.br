@@ -5,7 +5,7 @@ import ThemeToggle from '../ThemeToggle/ThemeToggle';
 export default function Header() {
     return (
         <header className={styles.header}>
-            <span>Rodrigo Gouveia</span>
+            <span className={styles.logo}>Rodrigo Gouveia</span>
             <nav className={styles.nav}>
                 <ul>
                     <li>
