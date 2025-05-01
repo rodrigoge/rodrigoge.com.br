@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './Header.module.scss';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import LanguageToggle from '../LanguageToggle/LanguageToggle';
 
 export default function Header() {
     return (
@@ -12,7 +13,7 @@ export default function Header() {
                         <ThemeToggle />
                     </li>
                     <li>
-                        <span>Language</span>
+                        <LanguageToggle />
                     </li>
                     <li>
                         <Link href={''}>
