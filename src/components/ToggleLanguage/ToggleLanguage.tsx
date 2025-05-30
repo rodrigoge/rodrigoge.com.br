@@ -1,30 +1,16 @@
 'use client'
 
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
 import styles from './ToggleLanguage.module.scss'
 import brFlag from '@/assets/br-flag.svg'
 import usaFlag from '@/assets/usa-flag.svg'
+import { useLanguage } from '@/context/LanguageContext'
 
 export default function ToggleLanguage() {
-	const [lang, setLang] = useState<'pt' | 'en'>('pt')
-
-	useEffect(() => {
-		const savedLang = sessionStorage.getItem('lang')
-		if (savedLang === 'pt' || savedLang === 'en') {
-			setLang(savedLang)
-		} else {
-			const browserLang = navigator.language.startsWith('pt') ? 'pt' : 'en'
-			setLang(browserLang)
-		}
-	}, [])
-
-	useEffect(() => {
-		sessionStorage.setItem('lang', lang)
-	}, [lang])
+	const { lang, setLang } = useLanguage()
 
 	const toggleLanguage = () => {
-		setLang((prev) => (prev === 'pt' ? 'en' : 'pt'))
+		setLang(lang === 'pt' ? 'en' : 'pt')
 	}
 
 	return (

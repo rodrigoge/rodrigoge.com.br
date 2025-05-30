@@ -1,6 +1,7 @@
 @import './colors';
 
-* {
-	background-color: $white-100;
+body {
+	background-color: var(--background-main);
+  	color: var(--text-main);
 	font-family: var(--font-urbanist);
 }

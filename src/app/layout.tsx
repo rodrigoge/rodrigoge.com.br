@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '@/styles/globals.scss'
 import { Shadows_Into_Light, Urbanist } from 'next/font/google'
+import { LanguageProvider } from '@/context/LanguageContext'
 
 export const metadata: Metadata = {
 	title: 'Rodrigo Gouveia Estevão',
@@ -28,7 +29,9 @@ export default function RootLayout({
 		<html
 			className={`${shadowsIntoLightFont.variable} ${urbanistFont.variable}`}
 		>
-			<body>{children}</body>
+			<body>
+				<LanguageProvider>{children}</LanguageProvider>
+			</body>
 		</html>
 	)
 }

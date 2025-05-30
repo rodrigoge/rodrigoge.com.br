@@ -26,4 +26,12 @@ $green-100: #34C759;
 	--background-main: var(--white-100);
 	--text-main: var(--grey-500);
 	--text-details: var(--black-800);
+	--background-details: var(--white-200);
+}
+
+html.dark {
+	--background-main: var(--black-900);
+	--text-main: var(--grey-600);
+	--text-details: var(--white-200);
+	--background-details: var(--black-700);
 }
