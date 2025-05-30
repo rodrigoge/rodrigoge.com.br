@@ -1,9 +1,23 @@
 import type { Metadata } from 'next'
+import '@/styles/globals.scss'
+import { Shadows_Into_Light, Urbanist } from 'next/font/google'
 
 export const metadata: Metadata = {
 	title: 'Rodrigo Gouveia Estevão',
 	description: 'A personal portfolio built using Next.js, Sass and TypeScript.',
 }
+
+const shadowsIntoLightFont = Shadows_Into_Light({
+	subsets: ['latin'],
+	weight: '400',
+	variable: '--font-shadows',
+})
+
+const urbanistFont = Urbanist({
+	subsets: ['latin'],
+	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+	variable: '--font-urbanist',
+})
 
 export default function RootLayout({
 	children,
@@ -11,7 +25,9 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="pt-BR">
+		<html
+			className={`${shadowsIntoLightFont.variable} ${urbanistFont.variable}`}
+		>
 			<body>{children}</body>
 		</html>
 	)

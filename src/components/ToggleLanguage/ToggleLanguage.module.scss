@@ -1,0 +1,28 @@
+@import '../../styles/colors.scss';
+
+.language_toggle_button {
+	background-color: var(--grey-400);
+	border: none;
+	padding: 6px;
+	width: 60px;
+	border-radius: 50px;
+	cursor: pointer;
+	outline: none;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+
+	.flag_icon {
+		background: none;
+	}
+
+	.text_country {
+		background: none;
+		font-size: var(--font-urbanist);
+		font-weight: 600;
+		color: var(--text-details);
+	}
+}

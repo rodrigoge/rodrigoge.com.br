@@ -1,0 +1,15 @@
+@import '../../styles/colors.scss';
+
+.toggle_theme_button {
+	background-color: var(--grey-400);
+	border: none;
+	padding: 6px 8px;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+
+	.icon {
+		background: none;
+		color: var(--text-details);
+	}
+}
