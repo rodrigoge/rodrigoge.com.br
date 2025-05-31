@@ -38,7 +38,9 @@ export default function Homepage() {
 
 					<div className={styles.position_degree}>
 						<span className={styles.position}>
-							<span>Backend Software Developer {t.in}</span>
+							<span>
+								{t.employed} {t.in}
+							</span>
 							<Link
 								href={'https://hst.com.br/pt-br/'}
 								className={styles.link}
