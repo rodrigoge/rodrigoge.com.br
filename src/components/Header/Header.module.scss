@@ -6,7 +6,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 20px;
+	padding: 0 260px;
 
 	.logo {
 		font-family: var(--font-shadows);
@@ -40,6 +40,10 @@
 				transition: 0.3s;
 			}
 		}
+	}
+
+	@media (max-width: 1366px) {
+		padding: 0 80px;
 	}
 
 	@media (max-width: 768px) {
