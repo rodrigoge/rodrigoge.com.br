@@ -58,6 +58,23 @@ export default function Homepage() {
 					</div>
 				</div>
 				<div className={styles.right_container}>
+					<div className={styles.dashed_border}>
+						{[...Array(7)].map((_, i) => (
+							<div
+								key={`h-${i}`}
+								className={styles.horizontal_line}
+								style={{ top: `${((i + 1) / 8) * 100}%` }}
+							/>
+						))}
+
+						{[...Array(7)].map((_, i) => (
+							<div
+								key={`v-${i}`}
+								className={styles.vertical_line}
+								style={{ left: `${((i + 1) / 8) * 100}%` }}
+							/>
+						))}
+					</div>
 					<section className={styles.images_container}>
 						<Image src={leftPhoto} alt="" />
 						<Image src={mainPhoto} alt="" />
