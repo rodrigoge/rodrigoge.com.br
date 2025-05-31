@@ -1,9 +1,11 @@
 import Header from '@/components/Header/Header'
+import Hero from './Homepage/Homepage'
 
 export default function Home() {
 	return (
 		<>
 			<Header />
+			<Hero />
 		</>
 	)
 }

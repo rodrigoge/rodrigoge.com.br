@@ -1,5 +1,9 @@
 {
 	"projects": "Projetos",
 	"about": "Sobre Mim",
-	"resume": "Currículo"
+	"resume": "Currículo",
+	"welcome": "Olá, eu sou ",
+	"in": "na",
+	"enthusiast": "Entusiasta de interfaces",
+	"graduated": "Formado em Sistemas de Informação"
 }

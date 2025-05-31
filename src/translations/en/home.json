@@ -1,5 +1,9 @@
 {
 	"projects": "Projects",
 	"about": "About Me",
-	"resume": "Resume"
+	"resume": "Resume",
+	"welcome": "Hi, i'm ",
+	"in": "in",
+	"enthusiast": "Interface enthusiast",
+	"graduated": "Graduated in Information Systems"
 }

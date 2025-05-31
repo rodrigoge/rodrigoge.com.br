@@ -1,0 +1,57 @@
+@use '../../styles/colors.scss';
+
+.hero_container {
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+
+	.left_container {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 0;
+
+		.textname {
+			color: var(--text-details);
+			font-size: 28px;
+			font-weight: 500;
+			line-height: 2.6;
+
+			.textname_hand {
+				margin-left: 6px;
+			}
+		}
+
+		.description {
+			display: flex;
+			flex-direction: column;
+
+			.text_description {
+				color: var(--text-details);
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+
+		.position_degree {
+			display: flex;
+			flex-direction: column;
+			margin-top: 16px;
+			gap: 4px;
+
+			.position {
+				color: var(--text-main);
+				font-weight: 400;
+			}
+
+			.degree {
+				color: var(--text-main);
+			}
+
+			.link {
+				color: var(--text-details);
+				font-weight: 600;
+				margin-left: 6px;
+			}
+		}
+	}
+}
