@@ -4,6 +4,9 @@ import Image from 'next/image'
 import styles from './Homepage.module.scss'
 import blueLineSvg from '@/assets/blue-line.svg'
 import waveHandSvg from '@/assets/wave-hand.svg'
+import mainPhoto from '@/assets/main-photo.png'
+import leftPhoto from '@/assets/left-photo.png'
+import rightPhoto from '@/assets/right-photo.png'
 import Link from 'next/link'
 import { MdArrowOutward } from 'react-icons/md'
 import { useLanguage } from '@/context/LanguageContext'
@@ -54,7 +57,13 @@ export default function Homepage() {
 						</span>
 					</div>
 				</div>
-				<div className={styles.right_container}></div>
+				<div className={styles.right_container}>
+					<section className={styles.images_container}>
+						<Image src={leftPhoto} alt="" />
+						<Image src={mainPhoto} alt="" />
+						<Image src={rightPhoto} alt="" />
+					</section>
+				</div>
 			</section>
 		</main>
 	)

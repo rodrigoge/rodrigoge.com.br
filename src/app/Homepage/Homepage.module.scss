@@ -2,7 +2,7 @@
 
 .hero_container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	padding: 0 20px;
 
 	.left_container {
@@ -52,6 +52,16 @@
 				font-weight: 600;
 				margin-left: 6px;
 			}
+		}
+	}
+
+	.right_container {
+		display: flex;
+		
+		.images_container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
 		}
 	}
 }
