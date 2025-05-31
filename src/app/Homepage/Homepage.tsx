@@ -4,9 +4,7 @@ import Image from 'next/image'
 import styles from './Homepage.module.scss'
 import blueLineSvg from '@/assets/blue-line.svg'
 import waveHandSvg from '@/assets/wave-hand.svg'
-import mainPhoto from '@/assets/main-photo.png'
-import leftPhoto from '@/assets/left-photo.png'
-import rightPhoto from '@/assets/right-photo.png'
+import avatar from '@/assets/main-photo.png'
 import Link from 'next/link'
 import { MdArrowOutward } from 'react-icons/md'
 import { useLanguage } from '@/context/LanguageContext'
@@ -19,22 +17,28 @@ export default function Homepage() {
 	return (
 		<main>
 			<section className={styles.hero_container}>
-				<div className={styles.left_container}>
+				<aside className={styles.left_container}>
 					<span className={styles.textname}>
-						{t.welcome} <b>Rodrigo Gouveia.</b>
-						<Image src={waveHandSvg} alt="" className={styles.textname_hand} />
+						<span>
+							{t.welcome} <b>Rodrigo Gouveia.</b>
+						</span>
+						<Image
+							src={waveHandSvg}
+							alt="Emoji Wave Hand"
+							className={styles.textname_hand}
+						/>
 					</span>
 
 					<div className={styles.description}>
 						<span className={styles.text_description}>
 							Backend Software Developer | {t.enthusiast}
 						</span>
-						<Image src={blueLineSvg} alt="" />
+						<Image src={blueLineSvg} alt="Blue Line" />
 					</div>
 
 					<div className={styles.position_degree}>
 						<span className={styles.position}>
-							Backend Software Developer {t.in}
+							<span>Backend Software Developer {t.in}</span>
 							<Link
 								href={'https://hst.com.br/pt-br/'}
 								className={styles.link}
@@ -45,7 +49,9 @@ export default function Homepage() {
 							</Link>
 						</span>
 						<span className={styles.degree}>
-							{t.graduated} {t.in}
+							<span>
+								{t.graduated} {t.in}
+							</span>
 							<Link
 								href={'https://fepi.br/'}
 								className={styles.link}
@@ -56,8 +62,8 @@ export default function Homepage() {
 							</Link>
 						</span>
 					</div>
-				</div>
-				<div className={styles.right_container}>
+				</aside>
+				<aside className={styles.right_container}>
 					<div className={styles.dashed_border}>
 						{[...Array(7)].map((_, i) => (
 							<div
@@ -75,12 +81,8 @@ export default function Homepage() {
 							/>
 						))}
 					</div>
-					<section className={styles.images_container}>
-						<Image src={leftPhoto} alt="" />
-						<Image src={mainPhoto} alt="" />
-						<Image src={rightPhoto} alt="" />
-					</section>
-				</div>
+					<Image src={avatar} alt="Avatar Image" className={styles.avatar} />
+				</aside>
 			</section>
 		</main>
 	)
