@@ -52,6 +52,11 @@
 				color: var(--text-details);
 				font-weight: 600;
 				margin-left: 6px;
+				transition: 0.4s;
+
+				&:hover {
+					color: var(--text-main);
+				}
 			}
 		}
 	}

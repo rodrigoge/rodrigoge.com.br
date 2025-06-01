@@ -2,6 +2,16 @@
 
 body {
 	background-color: var(--background-main);
-  	color: var(--text-main);
+	color: var(--text-main);
 	font-family: var(--font-urbanist);
+}
+
+::selection {
+	background: var(--yellow-100);
+	color: var(--black-800);
+}
+
+::-moz-selection {
+	background: var(--yellow-100);
+	color: var(--black-800);
 }
