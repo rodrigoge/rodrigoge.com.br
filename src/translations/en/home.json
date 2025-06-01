@@ -7,5 +7,15 @@
 	"enthusiast": "Interface enthusiast",
 	"graduated": "Graduated in Information Systems",
 	"employed": "Acting ",
-	"projectTitleSection": "Projects that Came to Life"
+	"fullstackApplication": "Fullstack Application",
+	"webApplication": "Web Application",
+	"mobileApplication": "Mobile Application",
+	"uiDesign": "UI Design",
+	"projectTitleSection": "Projects that Came to Life",
+	"projectComandaTextInformation": "Order management application, helping restaurants to control their orders.",
+	"projectPatasFelizesTextInformation": "Application that helps connect pets with people who want to donate or adopt them.",
+	"projectGlobiTextInformation": "Application to help diabetics record their daily measurements and have greater control over their monitoring.",
+	"projectReFoodTextInformation": "Application to organize and avoid food waste in establishments as much as possible.",
+	"projectTarefeiTextInformation": "Application for controlling daily tasks.",
+	"projectConversoTextInformation": "English learning app with a focus on writing and reading."
 }

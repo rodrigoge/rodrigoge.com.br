@@ -7,6 +7,11 @@ import greenLineSvg from '@/assets/green-line.svg'
 import waveHandSvg from '@/assets/wave-hand.svg'
 import arrowLineSvg from '@/assets/arrow-line.svg'
 import comandaImage from '@/assets/comanda-image.png'
+import patasFelizesImage from '@/assets/patas-felizes-image.png'
+import globiImage from '@/assets/globi-image.png'
+import refoodImage from '@/assets/refood-image.png'
+import tarefeiImage from '@/assets/tarefei-image.png'
+import conversoImage from '@/assets/converso-image.png'
 import avatar from '@/assets/main-photo.png'
 import Link from 'next/link'
 import { MdArrowOutward } from 'react-icons/md'
@@ -102,8 +107,59 @@ export default function Homepage() {
 						className={styles.green_line}
 					/>
 				</span>
-				<div>
-					<Card imageSrc={comandaImage} />
+				<div className={styles.project_cards}>
+					<Card
+						projectName={'Comanda'}
+						projectDescription={`${t.fullstackApplication}, ${t.webApplication}`}
+						projectTextInformation={t.projectComandaTextInformation}
+						link={'https://comanda-web.vercel.app/'}
+						imageSrc={comandaImage}
+					/>
+					<Card
+						projectName={'Patas Felizes'}
+						projectDescription={`${t.fullstackApplication}, ${t.webApplication}`}
+						projectTextInformation={t.projectPatasFelizesTextInformation}
+						link={'https://github.com/rodrigoge/patas-felizes'}
+						imageSrc={patasFelizesImage}
+					/>
+				</div>
+				<div className={styles.project_cards}>
+					<Card
+						projectName={'Globi'}
+						projectDescription={`${t.fullstackApplication}, ${t.mobileApplication}`}
+						projectTextInformation={t.projectGlobiTextInformation}
+						link={'https://github.com/rodrigoge/globi.app'}
+						imageSrc={globiImage}
+					/>
+					<Card
+						projectName={'ReFood'}
+						projectDescription={`${t.uiDesign}, ${t.webApplication}`}
+						projectTextInformation={t.projectReFoodTextInformation}
+						link={
+							'https://www.figma.com/design/HFHywpTt0v1tv6MjNfAqog/ReFood?m=auto&t=288HYOhIH6jDF1DQ-1'
+						}
+						imageSrc={refoodImage}
+					/>
+				</div>
+				<div className={styles.project_cards}>
+					<Card
+						projectName={'Tarefei'}
+						projectDescription={`${t.uiDesign}, ${t.mobileApplication}`}
+						projectTextInformation={t.projectTarefeiTextInformation}
+						link={
+							'https://www.figma.com/design/MZ0XpZ59Ij5iME3oqzW2ha/Tarefei?m=auto&t=288HYOhIH6jDF1DQ-1'
+						}
+						imageSrc={tarefeiImage}
+					/>
+					<Card
+						projectName={'Converso'}
+						projectDescription={`${t.uiDesign}, ${t.mobileApplication}`}
+						projectTextInformation={t.projectConversoTextInformation}
+						link={
+							'https://www.figma.com/design/KZs3ZINl7fG4MLyLfcso2m/Converso?m=auto&t=288HYOhIH6jDF1DQ-1'
+						}
+						imageSrc={conversoImage}
+					/>
 				</div>
 			</section>
 		</main>

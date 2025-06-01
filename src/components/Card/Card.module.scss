@@ -1,3 +1,5 @@
+@use '../../styles/colors.scss';
+
 .card_container {
 	display: flex;
 	flex-direction: column;
@@ -8,7 +10,45 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		background-color: var(--background-details);
+		border-radius: 8px;
+		width: 520px;
+		height: 380px;
+		transition: 0.4s;
+		border: 1px solid var(--background-details);
 
-		
+		.project_image {
+			width: 85%;
+			height: 85%;
+		}
+
+		&:hover {
+			border: 1px solid var(--text-main);
+		}
+	}
+
+	.card_info {
+		gap: 8px;
+
+		h3 {
+			color: var(--text-details);
+			font-weight: 500;
+		}
+
+		.card_text_container {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			width: 520px;
+			text-align: justify;
+
+			.card_description {
+				font-size: 16px;
+			}
+
+			.card_text_information {
+				color: var(--text-details);
+			}
+		}
 	}
 }

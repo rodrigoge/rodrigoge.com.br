@@ -7,5 +7,15 @@
 	"enthusiast": "Entusiasta de interfaces",
 	"graduated": "Formado em Sistemas de Informação",
 	"employed": "Atuando ",
-	"projectTitleSection": "Projetos que Ganharam Vida"
+	"fullstackApplication": "Fullstack Application",
+	"webApplication": "Web Application",
+	"mobileApplication": "Mobile Application",
+	"uiDesign": "UI Design",
+	"projectTitleSection": "Projetos que Ganharam Vida",
+	"projectComandaTextInformation": "Aplicativo para gerenciamento de pedidos, auxiliando restaurantes a controlar seus pedidos.",
+	"projectPatasFelizesTextInformation": "Aplicativo que ajuda a conectar animais de estimação com pessoas que querem doar ou adotar.",
+	"projectGlobiTextInformation": "Aplicativo para auxiliar diabéticos a registrar suas medidas diárias e ter maior controle sobre seu monitoramento.",
+	"projectReFoodTextInformation": "Aplicativo para organizar e evitar ao máximo o desperdício de alimentos nos estabelecimentos.",
+	"projectTarefeiTextInformation": "Aplicativo para controle de tarefas diárias.",
+	"projectConversoTextInformation": "Aplicativo de aprendizagem de inglês com foco em escrita e leitura."
 }
