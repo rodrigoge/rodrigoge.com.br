@@ -163,3 +163,31 @@
 		}
 	}
 }
+
+.separator {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 20px 180px;
+}
+
+.projects {
+	padding: 0 120px;
+	
+	.project_title_section {
+		display: flex;
+		flex-direction: column;
+
+		h1 {
+			color: var(--text-details)
+		}
+
+		.green_line {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			justify-content: flex-end;
+			margin-top: -10px;
+		}
+	}
+}

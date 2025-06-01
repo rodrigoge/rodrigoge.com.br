@@ -3,12 +3,16 @@
 import Image from 'next/image'
 import styles from './Homepage.module.scss'
 import blueLineSvg from '@/assets/blue-line.svg'
+import greenLineSvg from '@/assets/green-line.svg'
 import waveHandSvg from '@/assets/wave-hand.svg'
+import arrowLineSvg from '@/assets/arrow-line.svg'
+import comandaImage from '@/assets/comanda-image.png'
 import avatar from '@/assets/main-photo.png'
 import Link from 'next/link'
 import { MdArrowOutward } from 'react-icons/md'
 import { useLanguage } from '@/context/LanguageContext'
 import { getTranslation } from '@/utils/loadTransaction'
+import Card from '@/components/Card/Card'
 
 export default function Homepage() {
 	const { lang } = useLanguage()
@@ -85,6 +89,22 @@ export default function Homepage() {
 					</div>
 					<Image src={avatar} alt="Avatar Image" className={styles.avatar} />
 				</aside>
+			</section>
+			<span className={styles.separator}>
+				<Image src={arrowLineSvg} alt="Arrow Line" />
+			</span>
+			<section className={styles.projects}>
+				<span className={styles.project_title_section}>
+					<h1>{t.projectTitleSection}</h1>
+					<Image
+						src={greenLineSvg}
+						alt="Green Line"
+						className={styles.green_line}
+					/>
+				</span>
+				<div>
+					<Card imageSrc={comandaImage} />
+				</div>
 			</section>
 		</main>
 	)
