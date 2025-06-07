@@ -29,6 +29,7 @@ $yellow-100: #f7e499;
 	--text-main: var(--grey-500);
 	--text-details: var(--black-800);
 	--background-details: var(--white-200);
+	--background-shadow: var(--white-200);
 }
 
 html.dark {
@@ -36,4 +37,5 @@ html.dark {
 	--text-main: var(--grey-600);
 	--text-details: var(--white-200);
 	--background-details: var(--black-700);
+	--background-shadow: var(--black-800);
 }
