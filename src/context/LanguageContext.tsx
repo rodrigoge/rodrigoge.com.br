@@ -21,20 +21,20 @@ export const LanguageProvider = ({
 	const [lang, setLangState] = useState<Lang>('en')
 
 	useEffect(() => {
-		const storedLang = sessionStorage.getItem('lang') as Lang | null
+		const storedLang = localStorage.getItem('lang') as Lang | null
 		if (storedLang) {
 			setLangState(storedLang)
 		} else {
 			const browserLang = navigator.language.slice(0, 2)
 			const detectedLang: Lang = browserLang === 'pt' ? 'pt' : 'en'
 			setLangState(detectedLang)
-			sessionStorage.setItem('lang', detectedLang)
+			localStorage.setItem('lang', detectedLang)
 		}
 	}, [])
 
 	const setLang = (newLang: Lang) => {
 		setLangState(newLang)
-		sessionStorage.setItem('lang', newLang)
+		localStorage.setItem('lang', newLang)
 	}
 
 	return (
