@@ -25,13 +25,13 @@ export default function Header() {
 						<ToggleLanguage />
 					</li>
 					<li>
-						<a href="#projects">{t.projects}</a>
+						<a href="/">{t.home}</a>
 					</li>
 					<li>
-						<a href="#about">{t.about}</a>
+						<a href="/about">{t.about}</a>
 					</li>
 					<li>
-						<a href="#resume">{t.resume}</a>
+						<a href="/resume.pdf" target='_blank'>{t.resume}</a>
 					</li>
 				</ul>
 			</nav>
