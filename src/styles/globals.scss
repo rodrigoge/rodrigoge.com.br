@@ -1,4 +1,5 @@
 @use './colors';
+@use './themes.scss';
 
 body {
 	background-color: var(--background-main);
