@@ -38,5 +38,9 @@
 	"sevethAboutText": " entre outros, lidando com uma média de ",
 	"requestPerDay": "500.000 requisições por dia. ",
 	"lastAboutText": "Com grande capacidade de compreensão e ensino, pude participar apoiando e auxiliando colegas de trabalho, disseminando conhecimento e apoiando o desenvolvimento da minha equipe como um todo. Acredito que isso foi crucial para o sucesso dos projetos em que trabalhei, bem como para os avanços consecutivos na minha carreira.",
-	"myProfessionalExperiences": "Minhas Experiências Profissionais"
+	"myProfessionalExperiences": "Minhas Experiências Profissionais",
+	"actually": "Atualmente",
+	"hstDescriptionEmployee": "Na HST, contribuo significativamente para a criação de novas funcionalidades para produtos e soluções focados em meios de pagamento e tokenização, tornando as transações mais seguras e rápidas. Como principais atividades, contribuo para a construção de uma ferramenta administrativa para auxiliar operadores e clientes a consultar informações relevantes sobre transações financeiras e tokenização. Também participei da construção de um produto focado em Click to Pay para uma marca nacional.",
+	"tinnovaDescriptionEmployee": "Na Tinnova, desempenhei um papel importante como parte de uma das equipes relacionadas ao PagSeguro na UOL, com soluções focadas em tarifas, perfis de clientes e automação de produtos. Atuei em soluções de alta escalabilidade e monitoramento contínuo de informações, realizei a manutenção de produtos com automação constante em CI/CD, comunicação assíncrona entre serviços por meio de envio de mensagens em lote.",
+	"b2mlDescriptionEmployee": "Na B2ML, participei da construção de um sistema voltado para a área médica que gerencia unidades clínicas e hospitais no Brasil. Construí um módulo importante do produto responsável pela gestão de Exames, criei protótipos e interfaces em conjunto com os produtos e o cliente, adquiri maior conhecimento sobre arquiteturas legadas de algumas soluções."
 }

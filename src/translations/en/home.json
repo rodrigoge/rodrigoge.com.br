@@ -25,11 +25,11 @@
 	"andMy": "and my ",
 	"professionalCareer": "professional career",
 	"firstAboutText": "I have been working as a Software Developer for over 5 years. My greatest motivation is to use development to ",
-	"positively": "positively",
+	"positively": "positively ",
 	"secondAboutText": "impact people's lives, from problem-solving to building innovative solutions. With extensive experience in ",
 	"development": "development ",
 	"thirdAboutText": "I have a greater focus on building ",
-	"backend": "back-end",
+	"backend": "back-end ",
 	"fourthAboutText": "solutions, using best practices and principles to develop highly scalable and secure solutions.",
 	"fifthAboutText": "In recent years, I have gained significant experience working on large-scale systems for over",
 	"latinAmerica": "19 countries in Latin America ",
@@ -38,5 +38,9 @@
 	"sevethAboutText": "among others, handling an average of",
 	"requestPerDay": "500,000 requests per day. ",
 	"lastAboutText": "With a great capacity for understanding and teaching, I was able to participate in supporting and assisting coworkers, disseminating knowledge and supporting the development of my team as a whole. I believe that this was crucial to the success of the projects I worked on, as well as to the consecutive advances in my career.",
-	"myProfessionalExperiences": "My Professional Experiences"
+	"myProfessionalExperiences": "My Professional Experiences",
+	"actually": "Actually",
+	"hstDescriptionEmployee": "At HST, I contribute significantly to the creation of new features for products and solutions focused on payment methods and tokenization, making transactions safer and faster. My main activities include contributing to the construction of an administrative tool to help operators and customers consult relevant information about financial transactions and tokenization. I also participated in the construction of a product focused on Click to Pay for a national brand.",
+	"tinnovaDescriptionEmployee": "At Tinnova, I played an important role as part of one of the teams related to PagSeguro at UOL, with solutions focused on rates, customer profiles and product automation. I worked on highly scalable solutions and continuous information monitoring, performed product maintenance with constant automation in CI/CD, asynchronous communication between services through batch messaging.",
+	"b2mlDescriptionEmployee": "At B2ML, I participated in the construction of a system aimed at the medical field that manages clinical units and hospitals in Brazil. I built an important module of the product responsible for managing Exams, created prototypes and interfaces together with the products and the client, and acquired greater knowledge about legacy architectures of some solutions."
 }

@@ -10,6 +10,7 @@ import { getTranslation } from "@/utils/loadTransaction";
 import Image from "next/image";
 import aboutImage from '@/assets/about-image.png'
 import blueLineSvg from '@/assets/blue-line.svg'
+import ExperienceCard from "@/components/ExperienceCard/ExperienceCard";
 
 export default function About() {
     const { lang } = useLanguage()
@@ -57,6 +58,32 @@ export default function About() {
                             className={styles.green_line}
                         />
                     </span>
+                    <div className={styles.experiences_cards}>
+                        <ExperienceCard
+                            company="HST Card Technology"
+                            employee="Backend Software Developer"
+                            startDate="Jun 2022"
+                            endDate={`${t.actually}`}
+                            url="https://hst.com.br/pt-br/"
+                            description={`${t.hstDescriptionEmployee}`}
+                        />
+                        <ExperienceCard
+                            company="Tinnova Software Solutions"
+                            employee="Backend Software Engineer"
+                            startDate="Jan 2022"
+                            endDate="Jun 2022"
+                            url="https://tinnova.com.br/"
+                            description={`${t.tinnovaDescriptionEmployee}`}
+                        />
+                        <ExperienceCard
+                            company="B2ML Sistemas LTDA"
+                            employee="Jr. Software Developer"
+                            startDate="Jun 2020"
+                            endDate="Jan 2022"
+                            url="https://www.b2ml.com.br/"
+                            description={`${t.b2mlDescriptionEmployee}`}
+                        />
+                    </div>
                 </section>
             </main>
             <Footer />

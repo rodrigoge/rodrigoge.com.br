@@ -64,7 +64,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 20px 380px;
+    padding: 80px 380px;
 
     @media (max-width: 1366px) {
         padding: 0 120px;
@@ -73,6 +73,9 @@
 
 .experiences {
     padding: 20px 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     .experiences_title {
         display: flex;
@@ -89,6 +92,11 @@
             justify-content: flex-end;
             margin-top: -10px;
         }
+
+        @media (max-width: 768px) {
+            padding: 20px 20px;
+            align-items: center;
+        }
     }
 
     @media (max-width: 1366px) {
@@ -103,5 +111,12 @@
             flex-direction: column;
             align-items: center;
         }
+    }
+
+    .experiences_cards {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        margin-top: 32px;
     }
 }
