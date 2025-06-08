@@ -23,11 +23,11 @@ export default function About() {
                 <section className={styles.about_container}>
                     <aside className={styles.about_left_container}>
                         <div className={styles.about_title}>
-                            <span className={styles.textname}>
+                            <span className={styles.textname_description}>
                                 {t.aLittleAboutMe} <b>{t.me}</b>
                                 {t.andMy} <b>{t.professionalCareer}.</b>
                             </span>
-                            <Image src={blueLineSvg} alt="Blue Line" />
+                            <Image src={blueLineSvg} alt="Blue Line" className={styles.about_title_blue_line} />
                         </div>
                         <span className={styles.about_description}>
                             {t.firstAboutText} <b>{t.positively}</b>
