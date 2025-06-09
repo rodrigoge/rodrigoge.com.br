@@ -27,4 +27,16 @@
         margin-top: 32px;
         text-align: justify;
     }
+
+    @media (max-width: 768px) {
+        padding: 32px;
+
+        .experience_title {
+            text-align: center;
+        }
+
+        .experience_description {
+            font-size: 14px;
+        }
+    }
 }

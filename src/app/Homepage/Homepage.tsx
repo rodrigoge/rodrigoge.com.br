@@ -24,7 +24,7 @@ export default function Homepage() {
 	const t = getTranslation(lang)
 
 	return (
-		<main>
+		<main className={styles.main_container}>
 			<section className={styles.hero_container}>
 				<aside className={styles.left_container}>
 					<span className={styles.textname}>

@@ -19,7 +19,7 @@ export default function About() {
     return (
         <>
             <Header />
-            <main>
+            <main className={styles.about_main_container}>
                 <section className={styles.about_container}>
                     <aside className={styles.about_left_container}>
                         <div className={styles.about_title}>
