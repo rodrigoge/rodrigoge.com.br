@@ -36,6 +36,7 @@ export default function ThemeToggle() {
 		<button
 			onClick={() => setIsDark(!isDark)}
 			className={styles.toggle_theme_button}
+			aria-label='Change theme'
 		>
 			{isDark ? (
 				<TbMoonFilled size={18} className={styles.icon} />

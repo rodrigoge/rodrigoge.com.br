@@ -31,7 +31,7 @@ export default function Header() {
 						<Link href="/about">{t.about}</Link>
 					</li>
 					<li>
-						<Link href="/resume.pdf" target='_blank'>{t.resume}</Link>
+						<Link href="/resume.pdf" target='_blank' rel="noopener noreferrer">{t.resume}</Link>
 					</li>
 				</ul>
 			</nav>

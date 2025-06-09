@@ -14,7 +14,11 @@ export default function ToggleLanguage() {
 	}
 
 	return (
-		<button onClick={toggleLanguage} className={styles.language_toggle_button}>
+		<button
+			aria-label='Change language'
+			onClick={toggleLanguage}
+			className={styles.language_toggle_button}
+		>
 			<Image
 				src={lang === 'pt' ? brFlag : usaFlag}
 				alt={lang === 'pt' ? 'PT' : 'EN'}

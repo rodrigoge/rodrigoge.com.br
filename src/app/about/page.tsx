@@ -23,10 +23,10 @@ export default function About() {
                 <section className={styles.about_container}>
                     <aside className={styles.about_left_container}>
                         <div className={styles.about_title}>
-                            <span className={styles.textname_description}>
+                            <h2 className={styles.textname_description}>
                                 {t.aLittleAboutMe} <b>{t.me}</b>
                                 {t.andMy} <b>{t.professionalCareer}.</b>
-                            </span>
+                            </h2>
                             <Image src={blueLineSvg} alt="Blue Line" className={styles.about_title_blue_line} />
                         </div>
                         <span className={styles.about_description}>
@@ -43,18 +43,18 @@ export default function About() {
                         </span>
                     </aside>
                     <aside className={styles.about_right_container}>
-                        <Image src={aboutImage} alt="Avatar Image" className={styles.avatar} />
+                        <Image src={aboutImage} alt="My personal image" className={styles.avatar} />
                     </aside>
                 </section>
-                <span className={styles.separator}>
-                    <Image src={arrowLineAboutSvg} alt="Arrow Line" />
-                </span>
+                <div className={styles.separator}>
+                    <Image src={arrowLineAboutSvg} alt="" />
+                </div>
                 <section className={styles.experiences}>
                     <span className={styles.experiences_title}>
                         <h1>{t.myProfessionalExperiences}</h1>
                         <Image
                             src={greenLineSvg}
-                            alt="Green Line"
+                            alt=""
                             className={styles.green_line}
                         />
                     </span>

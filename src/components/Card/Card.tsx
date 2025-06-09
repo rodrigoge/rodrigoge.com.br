@@ -19,10 +19,15 @@ export default function Card({
 }: CardProps) {
 	return (
 		<div className={styles.card_container}>
-			<Link href={link} className={styles.card_box} target="_blank">
+			<Link
+				href={link}
+				className={styles.card_box}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<Image
 					src={imageSrc}
-					alt="Project Image"
+					alt={`Image from ${projectName}`}
 					className={styles.project_image}
 				/>
 			</Link>
